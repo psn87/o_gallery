@@ -13,7 +13,7 @@
     	canvas = document.getElementById("canvas");
     	anim_container = document.getElementById("animation_container");
     	dom_overlay_container = document.getElementById("dom_overlay_container");
-    	var comp=AdobeAn.getComposition("0E73EEBA566F454BB4E7C6F61BDF8800");
+    	var comp=AdobeAn.getComposition("6286A6609F41A54492D75FE501D288C1");
     	var lib=comp.getLibrary();
     	handleComplete({},comp);
     }
@@ -21,7 +21,7 @@
     	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
     	var lib=comp.getLibrary();
     	var ss=comp.getSpriteSheet();
-    	exportRoot = new lib.A1();
+    	exportRoot = new lib.Anim();
     	stage = new lib.Stage(canvas);
     	//Registers the "tick" event listener.
     	fnStartAnimation = function() {
@@ -65,7 +65,7 @@
     			stage.tickOnUpdate = true;
     		}
     	}
-    	makeResponsive(true,'both',false,1);
+    	makeResponsive(false,'both',false,1);
     	AdobeAn.compositionLoaded(lib.properties.id);
     	fnStartAnimation();
     }
@@ -85,8 +85,12 @@
     </div>
   </div>
 </nav>
-<div class="parallax parallax_1"></div>
+<div class="parallax parallax_4"></div>
 <div class="container container_1">
+  Consulted he eagerness unfeeling deficient existence of. Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed.
+</div>
+<div class="parallax parallax_1"></div>
+<div class="container container_2">
   Consulted he eagerness unfeeling deficient existence of. Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed.
 </div>
 <div class="parallax parallax_2"></div>
@@ -97,9 +101,9 @@
 <section>
 </section>
 <footer>
-  <div id="animation_container" style="background-color:rgba(0, 0, 0, 1.00); width:550px; height:400px">
-		<canvas id="canvas" width="550" height="400" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:550px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
+  <div id="animation_container" style="background-color:rgba(0, 0, 0, 1.00); width:800px; height:600px">
+		<canvas id="canvas" width="800" height="600" style="position: absolute; display: block; background-color:rgba(0, 0, 0, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:800px; height:600px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 </footer>
