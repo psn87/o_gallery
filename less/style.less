@@ -4,6 +4,7 @@ html {
 body {
   height: 100%;
   margin: 0;
+  cursor: cell;
 }
 
 #animation_container {
@@ -42,21 +43,28 @@ h2 {
   &__item {
     color: #fff;
     margin: 0 10px;
+    pointer-events: visible;
+    }
+  :hover {
+    color: #ff0000;
+    cursor: context-menu;
   }
 }
 
 
 .container {
-  height: 500px;
   font-family: monospace;
   font-size: 18px;
   text-align: center;
   padding: 30px;
   &_1 {
     background-color: #fafafa;
+    height: 350px;
   }
   &_2 {
-    background-color: #fbfbfb;
+    background-color: #ff0000;
+    height: 150px;
+    color: #ffffff;
   }
 }
 
