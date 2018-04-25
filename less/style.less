@@ -35,38 +35,65 @@ h2 {
 }
 
 .navbar {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 16px;
   width: 100%;
   height: 100px;
   background-color: #000;
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
   &__item {
-    color: #fff;
+    color: #ff0000;
+    font-weight: 600;
+    font-family: monospace;
     margin: 0 10px;
     pointer-events: visible;
     }
   :hover {
-    color: #ff0000;
+    color: #fff;
+    font-weight: 800;
     cursor: context-menu;
   }
 }
 
+.button {
+  display: inline-block;
+ color: white;
+ font-weight: 700;
+ text-decoration: none;
+ padding: 10px 25px;
+ border: 2px solid;
+ &:hover {
+   border: 2px dotted;
+   font-weight: 500;
+ }
+}
 
 .container {
   font-family: monospace;
   font-size: 18px;
   text-align: center;
-  padding: 30px;
-  &_1 {
+  display: flex;
+  padding: 30px 30px;
+  &__1 {
     background-color: #fafafa;
-    height: 350px;
+    display: inline-flex;
+    &_left {
+      border: 4px solid black;
+    }
   }
+
   &_2 {
+    justify-content: center;
     background-color: #ff0000;
-    height: 150px;
     color: #ffffff;
   }
+  &_3 {
+    display: inline-flex;
+    width: 100%;
+  }
 }
+
 
 .parallax {
   height: 100%;
